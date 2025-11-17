@@ -7,6 +7,14 @@
 
 <body>
     <a-scene>
+        <!-- ASSETS: Carga del modelo 3D -->
+      <a-assets>
+        <a-asset-item id="robot" src="robot.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- Robot 3D -->
+      <a-entity gltf-model="#robot" position="0 0 -3" scale="1 1 1" rotation="0 0 0"></a-entity>
+
         <a-assets>
             <img id="textura-suelo" src="cesped.jpg">
             <img id="textura-pared" src="pared.jpg">
