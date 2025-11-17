@@ -11,14 +11,21 @@
         <a-assets>
             <a-asset-item id="robot" src="robot.glb"></a-asset-item>
         </a-assets>
-        <a-entity gltf-model="#robot" position="0 0 -3" scale="1 1 1" rotation="0 0 0"></a-entity>
+        <a-entity gltf-model="#robot" position="0 0 -3" scale="1 1 1" rotation="0 0 0"  animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"></a-entity>></a-entity>
+        <!--1.Rotación: Gira sobre su eje-->
+        <a-box position="3 1 -5" color="#FF6B6B"
+                animation="property: rotation; to: 0 360 0; loop: true; dur: 4000">
+        </a-box>
+        
         <!-- Robot_1 3D -->
-        <a-entity gltf-model="#robot_1" position="3 0 -3" scale="1 1 1" rotation="0 0 0"></a-entity>
+       
         <!-- ASSETS: Carga del modelo 3D -->
         <a-assets>
             <a-asset-item id="robot_1" src="robot_1.glb"></a-asset-item>
-        </a-assets>
 
+        </a-assets>
+         <a-entity gltf-model="#robot_1" position="3 0 -3" scale="1 1 1" rotation="0 0 0"></a-entity>
+        
         
         <a-assets>
             <img id="textura-suelo" src="cesped.jpg">
